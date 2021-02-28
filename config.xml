@@ -17,6 +17,7 @@ Start Your Business With Kalam Academy
    
     <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+    <plugin name="cordova-plugin-x-socialsharing" version="5.4.0" /> 
     <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
 
 
