@@ -9,23 +9,15 @@ Start Your Business With Kalam Academy
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
-    
-	<preference name="android-minSdkVersion" value="14" />
-	<preference name="android-targetSdkVersion" value="29" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-targetSdkVersion" value="29" />
     <preference name="android-maxSdkVersion" value="29" />
-
-   
     <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
-    <plugin name="cordova-plugin-x-socialsharing" version="5.4.0" /> 
-    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
-
-
+     <plugin name="cordova-plugin-x-socialsharing" version="5.4.0" /> 
     <platform name="android">
-		<icon src="icon.png"/> 
+        <icon src="icon.png" />
     </platform>
-   
-    
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
