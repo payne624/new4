@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalam Academy</title>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript">
+	var value = window.localStorage.getItem("login");
+	if(value=='true'){
+		window.location.href="home.html";
+	}
+</script>
+</head>
+
+<body>
+	<div class="loader">
+		<div class="loader-box">
+			<label>
+				<i class="fa fa-spinner fa-spin"></i>
+			</label>
+		</div>
+	</div>
+	<div class="login-screen">
+		<figure class="top-image">
+			<img src="image/loginlogo.png" alt="login-logo">
+		</figure>
+		<ul>
+			<li>
+				<a href="#" class="active login-tab">Login</a>
+			</li>
+			<li>
+				<a href="#" class="signup-tab">Signup</a>
+			</li>
+		</ul>
+		<!-- <h2>Sign In</h2> -->
+		<form class="login-form" id="login-form">
+			<fieldset>
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<input type="name" placeholder="Mobile" class="form-control" id="L_Mobile">
+				<!--<span class="error">* This Field is Required</span>-->
+			</fieldset>
+			<fieldset>
+				<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+				<input type="password" placeholder="Password" class="form-control" id="L_Password">
+				<span class="error" id="loginerrror"></span>
+			</fieldset>
+			<fieldset class="mb-0">
+				<input class="btn-primary" type="submit" value="Login" name="submit" onclick="userlogin()" id="login-btn">
+			</fieldset>
+			<a class="forgot-password open-forgot-password" href="javascript:void(0)">Forgot Password ?</a>
+		</form>
+		<form class="signup-form">
+			<fieldset>
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<input type="text" placeholder="name" class="form-control" id="S_name">
+				<!--<span class="error">* This Field is Required</span>-->
+			</fieldset>
+			<fieldset>
+				<i class="fa fa-phone" aria-hidden="true"></i>
+				<input type="number" placeholder="Mobile" class="form-control" id="S_mobile">
+				<!--<span class="error">* This Field is Required</span>-->
+			</fieldset>
+			<fieldset>
+				<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+				<input type="password" placeholder="password" class="form-control" id="S_password">
+				<span class="error" id="signup-error"></span>
+			</fieldset>
+			<fieldset class="mb-0">
+				<input class="btn-primary" type="button" value="Signup" name="" onclick="usersignup()" id="signup-btn">
+			</fieldset>
+		</form>
+	<!-- 	<div class="text-center">
+			<label class="dont-have-account">Don't have an account?<a href="signup.html"> Sign Up</a></label>
+		</div> -->
+	</div>
+
+	<!--custom modal -->
+	<div class="forgot-password custom-modal">
+		<div class="modal-box">
+			<div class="modal-body">
+				<a href="javascript:void(0)" class="close-modal">x</a>
+				<h2>Forgot Password</h2>
+				<form>
+					<fieldset>
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<input type="number" placeholder="Mobile" class="form-control" id="forget_pass">
+						<span class="error" id="forgetpass-error"></span>
+					</fieldset>
+					<fieldset>
+						<input class="btn-primary" type="button" value="Send Password" name="" onclick="forgetpassword()" id="forgetpassword-btn">
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--custom modal -->
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/myscript.js"></script>
+</body>
+</html>

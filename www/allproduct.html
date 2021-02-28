@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalam Academy</title>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="loader">
+		<div class="loader-box">
+			<label>
+				<i class="fa fa-spinner fa-spin"></i>
+			</label>
+		</div>
+	</div>
+	<!-- header -->
+	<header>
+		<a href="home.html">
+			<i class="fa fa-arrow-left" aria-hidden="true"></i>
+		</a>
+		<div class="flex-1">
+			<h3 id="cat-name">Vegetable</h3>
+		</div>
+		<div class="left-icons">
+			<a href="cart.html" class="cart-header">
+				<k id="cart_count"></k>
+				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			</a>
+		</div>
+	</header>
+	<!-- header -->
+<input type="hidden" id="total"> <input type="hidden" id="proqty"> 
+
+	<!-- main -->
+	<div class="all-product-category-page main-content" >
+<!--		
+<div class="count-item"><a href="javascript:void(0)" class="decrement" onclick="minusitempro()">-</a><div class="input-box"><input type="number" placeholder="0" name="" value="0" id="proqty" disabled> </div><a href="javascript:void(0)" class="increment" onclick="plusitempro()">+</a></div> 
+-->
+
+		<div id="newprotab"></div>
+
+<!--		
+
+		<div class="all-category product-all-page"><div class="all-product-category"><div class="category-box"><a href="singleproduct.html"><figure><img src="image/vegetable.jpg" alt="category"><span class="off">Offer</span></figure></a><div class="left-content"><h6>Tomato</h6><div class="quality-list"><ul><li><p>Quantity</p><p class="form-control">100 gm</p></li><li><p>Price</p><p class="form-control">₹ 32</p></li></ul></div><div class="bottom-part"><h4><p><del>₹ 45</del></p>₹ 32</h4><a href="#">Buy Now</a></div></div></div></div></div>
+
+
+		<div class="all-category product-all-page"><div class="all-product-category"><div class="category-box"><a href="singleproduct.html"><figure><img src="image/vegetable.jpg" alt="category"></figure></a><div class="left-content"><h6>Tomato</h6><div class="quality-list"><ul><li><p>Quantity</p><p class="form-control">100 gm</p></li><li><p>Price</p><p class="form-control">₹ 32</p></li></ul></div><div class="bottom-part"><h4><p></p>₹ 32</h4><a href="#">Buy Now</a></div></div></div></div></div>
+
+<div class="all-category product-all-page"><div class="all-product-category"><div class="category-box"><a href="singleproduct.html"><figure><p class="out-of-stock"><label>Out of Stock</label></p><img src="image/vegetable.jpg" alt="category"></figure></a><div class="left-content"><h6>Tomato</h6><div class="quality-list"><ul><li><p>Quantity</p><p class="form-control">100 gm</p></li><li><p>Price</p><p class="form-control">₹ 32</p></li></ul></div><div class="bottom-part"><h4><p></p>₹ 32</h4><a href="#"><del>Buy Now</del></a></div></div></div></div></div>
+
+
+		<div class="all-category product-all-page">
+			<div class="all-product-category">
+				<div class="category-box">
+					<a href="singleproduct.html">
+						<figure>
+							<img src="image/vegetable.jpg" alt="category">
+							<span class="off">-20%</span>
+						</figure>
+					</a>
+					<div class="left-content">
+						<h6>Tomato</h6>
+						<div class="quality-list">
+							<ul>
+								<li>
+									<p>Type</p>
+									<p class="form-control">Regular</p>
+								</li>
+								<li>
+									<p>Storage Life</p>
+									<p class="form-control">3 Days</p>
+								</li>
+								<li>
+									<p>QTY</p>
+									<select class="form-control">
+										<option value="1kg">1kg</option>
+										<option value="1kg">1kg</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+						<div class="bottom-part">
+							<h4>
+							<p><del>₹ 45</del></p>
+							₹ 32
+							</h4>
+							<a href="#">Add to Cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="all-category product-all-page">
+			<div class="all-product-category">
+				<div class="category-box">
+					<a href="singleproduct.html">
+						<figure>
+							<img src="image/vegetable.jpg" alt="category">
+							<span class="off">-20%</span>
+						</figure>
+					</a>
+					<div class="left-content">
+						<h6>Tomato</h6>
+						<div class="quality-list">
+							<ul>
+								<li>
+									<p>Type</p>
+									<p class="form-control">Regular</p>
+								</li>
+								<li>
+									<p>Storage Life</p>
+									<p class="form-control">3 Days</p>
+								</li>
+								<li>
+									<p>QTY</p>
+									<select class="form-control">
+										<option value="1kg">1kg</option>
+										<option value="1kg">1kg</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+						<div class="bottom-part">
+							<h4>
+							<p><del>₹ 45</del></p>
+							₹ 32
+							</h4>
+							<a href="#">Add to Cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="all-category product-all-page">
+			<div class="all-product-category">
+				<div class="category-box">
+					<a href="singleproduct.html">
+					<figure>
+						<p class="out-of-stock">
+							<label>
+								Out of Stock
+							</label>
+						</p>
+						<span class="off">-20%</span>
+						<img src="image/vegetable.jpg" alt="category">
+					</figure>
+					</a>
+					<div class="left-content">
+						<h6>Tomato</h6>
+						<div class="quality-list">
+							<ul>
+								<li>
+									<p>Type</p>
+									<p class="form-control">Regular</p>
+								</li>
+								<li>
+									<p>Storage Life</p>
+									<p class="form-control">3 Days</p>
+								</li>
+								<li>
+									<p>QTY</p>
+									<select class="form-control">
+										<option value="1kg">1kg</option>
+										<option value="1kg">1kg</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+						<div class="bottom-part">
+							<h4>
+							<p><del>₹ 45</del></p>
+							₹ 32
+							</h4>
+							<a href="#">Add to Cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="all-category product-all-page">
+			<div class="all-product-category">
+				<div class="category-box">
+					<a href="singleproduct.html">
+						<figure>
+							<img src="image/vegetable.jpg" alt="category">
+							<span class="off">-20%</span>
+						</figure>
+					</a>
+					<div class="left-content">
+						<h6>Tomato</h6>
+						<div class="quality-list">
+							<ul>
+								<li>
+									<p>Type</p>
+									<p class="form-control">Regular</p>
+								</li>
+								<li>
+									<p>Storage Life</p>
+									<p class="form-control">3 Days</p>
+								</li>
+								<li>
+									<p>QTY</p>
+									<select class="form-control">
+										<option value="1kg">1kg</option>
+										<option value="1kg">1kg</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+						<div class="bottom-part">
+							<h4>
+							<p><del>₹ 45</del></p>
+							₹ 32
+							</h4>
+							<a href="#">Add to Cart</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+-->
+
+		<div class="bottom-icon">
+			<ul>
+				<li>
+					<a href="home.html"><i class="fa fa-home"></i><p>Home</p></a>
+				</li>
+				<li>
+					<a href="myorder.html"><i class="fa fa-shopping-bag"></i><p>Order</p></a>
+				</li>
+				<li>
+					<a href="cart.html"><i class="fa fa-shopping-cart"></i><p>Cart</p></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- main -->
+
+
+	<!-- sidebar -->
+	<div class="sidebar">
+		<div class="sidebar-box">
+			<div class="sidebar-header">
+				<h2>Hi, Bansal</h2>
+			</div>
+			<ul>
+				<li>
+					<a href="#">
+						<i class="fa fa-home"></i>
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-user"></i>
+						My Account
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-shopping-bag"></i>
+						My Orders
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-shopping-cart"></i>
+						Cart
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-sign-out"></i>
+						Logout
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- sidebar -->
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/myscript.js"></script>
+<script>
+	var value = window.localStorage.getItem("login");
+	if(value!='true'){
+		window.location.href="index.html";
+	}
+	loadProduct1();	showcartcount();
+</script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalam Academy</title>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="loader">
+		<div class="loader-box">
+			<label>
+				<i class="fa fa-spinner fa-spin"></i>
+			</label>
+		</div>
+	</div>
+	<!-- header -->
+	<header>
+		<a href="home.html">
+			<i class="fa fa-arrow-left" aria-hidden="true"></i>
+		</a>
+		<div class="flex-1">
+			<h3 id="heading-pro">Vegetable</h3>
+		</div>
+		<div class="left-icons">
+			<a href="cart.html" class="cart-header">
+				<k id="cart_count"></k>
+				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			</a>
+		</div>
+	</header>
+	<!-- header -->
+
+	<!-- main -->
+	<div class="single-category-page">
+		<div class="all-category">
+			<div class="single-category-grid">
+				<div class="category-box">
+					<figure id="kimg">
+						<img src="image/vegetable.jpg" alt="category">
+					</figure>
+				</div>
+			</div>
+		</div>
+		<div class="single-category-grid content-data">
+			<div class="category-box">
+				<div class="below-content">
+					<h6 id="Name">Tomato (टमाटर)</h6>
+					<p class="product-name"> <k id="Price">120 </k> Per <k id="Qty"> kg</k></p>
+					<div class="partican">
+						<div class="des">
+							<p><span>Description:</span><k id="Desc"> Red TomatoRed Tomato Red Tomato Red Tomato Red Tomato Red Tomato </k></p>
+						</div>
+						<div>
+							<!--<input type="number" placeholder="Quantity" name="">-->
+							<div class="count-item">
+								<a href="javascript:void(0)" class="decrement" onclick="minusitempro()">-</a>
+							<div class="input-box">
+								<input type="number" placeholder="0" name="" value="0" id="proqty" disabled> 
+							</div>
+								<a href="javascript:void(0)" class="increment" onclick="plusitempro()">+</a>
+							</div> 
+							<k id="tty"></k>
+							<div class="quantity">
+								<p id="Price1"> ✘ ₹ 40  </p>
+								<input type="number" placeholder="Total" name="" id="total" disabled>
+							</div>
+						</div>	
+					</div>
+
+					<div class="action-buttons-cart">
+						<a href="#" class="add-cart" onclick="AddToCart()" id="atttocart-btn">Add to Cart</a>
+					</div>
+					<span class="error" id="atttocart-error"></span>
+
+				</div>
+			</div>
+		</div>
+		<div class="bottom-icon">
+			<ul>
+				<li>
+					<a href="home.html"><i class="fa fa-home"></i><p>Home</p></a>
+				</li>
+				<li>
+					<a href="myorder.html"><i class="fa fa-shopping-bag"></i><p>Order</p></a>
+				</li>
+				<li>
+					<a href="cart.html"><i class="fa fa-shopping-cart"></i><p>Cart</p></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- main -->
+
+
+	<!-- sidebar -->
+	<div class="sidebar">
+		<div class="sidebar-box">
+			<div class="sidebar-header">
+				<h2>Hi, Bansal</h2>
+			</div>
+			<ul>
+				<li>
+					<a href="#">
+						<i class="fa fa-home"></i>
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-user"></i>
+						My Account
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-shopping-bag"></i>
+						My Orders
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-shopping-cart"></i>
+						Cart
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-sign-out"></i>
+						Logout
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- sidebar -->
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/myscript.js"></script>
+<script>
+	var value = window.localStorage.getItem("login");
+	if(value!='true'){
+		window.location.href="index.html";
+	}
+	loadProductDetail();	showcartcount();
+</script>
+</body>
+</html>

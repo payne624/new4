@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalam Academy</title>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="loader">
+		<div class="loader-box">
+			<label>
+				<i class="fa fa-spinner fa-spin"></i>
+			</label>
+		</div>
+	</div>
+	<!-- header -->
+	<header>
+		<a href="home.html">
+			<i class="fa fa-arrow-left" aria-hidden="true"></i>
+		</a>
+		<div class="flex-1">
+			<h3>My Account</h3>
+		</div>
+		<div class="left-icons">
+			<a href="cart.html" class="cart-header">
+				<k id="cart_count"></k>
+				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			</a>
+		</div>
+	</header>
+	<!-- header -->
+
+	<!-- main -->
+	<div class="my-account-page main-content">
+		<form id="myaccount-form">
+			<fieldset class="upload-image">
+				<div class="image-user">
+					<img src="image/profile.jpg" alt="profile">
+				</div>
+			</fieldset>
+			<fieldset>
+				<input type="text" class="form-control" placeholder="name" name="" id="S_name">
+				<i class="fa fa-user"></i>
+			</fieldset>
+			<fieldset>
+				<input type="number" class="form-control" placeholder="mobile number" name="" id="S_mobile">
+				<i class="fa fa-phone"></i>
+			</fieldset>
+			<fieldset>
+				<input type="password" class="form-control" placeholder="Old Password" name="" id="SO_password">
+				<i class="fa fa-unlock-alt"></i>
+			</fieldset>
+			<fieldset>
+				<input type="password" class="form-control" placeholder="New Password" id="S_password">
+				<i class="fa fa-unlock-alt"></i>
+			</fieldset>
+		<!--<fieldset>
+				<input type="password" class="form-control" placeholder="Confirm Password">
+				<i class="fa fa-unlock-alt"></i>
+			</fieldset>-->
+			<fieldset class="mb-0">
+				<input type="submit" class="btn-primary" name="Update" onclick="userupdate()" id="userupdate-btn">
+				<span class="error" id="userupdate-error"></span>
+			</fieldset>
+		</form>
+		<div class="bottom-icon">
+			<ul>
+				<li>
+					<a href="home.html"><i class="fa fa-home"></i><p>Home</p></a>
+				</li>
+				<li>
+					<a href="myorder.html"><i class="fa fa-shopping-bag"></i><p>Order</p></a>
+				</li>
+				<li>
+					<a href="cart.html"><i class="fa fa-shopping-cart"></i><p>Cart</p></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- main -->
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/myscript.js"></script>
+<script>
+	var value = window.localStorage.getItem("login");
+	if(value!='true'){
+		window.location.href="index.html";
+	}
+	loadMYAccount(); showcartcount();
+</script>
+</body>
+</html>

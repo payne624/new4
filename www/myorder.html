@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalam Academy</title>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="loader">
+		<div class="loader-box">
+			<label>
+				<i class="fa fa-spinner fa-spin"></i>
+			</label>
+		</div>
+	</div>
+	<!-- header -->
+	<header>
+		<a href="home.html">
+			<i class="fa fa-arrow-left" aria-hidden="true"></i>
+		</a>
+		<div class="flex-1">
+			<h3>My Order</h3>
+		</div>
+		<div class="left-icons">
+			<a href="cart.html" class="cart-header">
+				<k id="cart_count"></k>
+				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			</a>
+		</div>
+	</header>
+	<!-- header -->
+
+	<!-- main -->
+	<div class="my-account-page main-content">
+		<div class="my-orders-detail">
+		<div id="listv"></div>
+
+<!--
+			<div class="cart-card">
+				<p><span>Date:</span> 22 May 2020</p>				
+				<p><span>Order Number:</span> 1200121</p>				
+				<p><span>Total:</span><i class="fa fa-inr" aria-hidden="true"></i> $322</p>
+				<p><span>Payment Mode:</span> <i class="fa fa-money" aria-hidden="true"></i> COD</p>				
+				<p><span>Dilivery Charge:</span> $1</p>				
+				<p><span>Dilivery Agent Number:</span> 8989888888</p>				
+				<p><span>Address:</span> Y-125, sector 12 noida</p>				
+				<p class="status"><span>Status:</span> Order Placed</p>				
+				<div class="order-action">
+					<a href="javascript:void(0)">Cancel</a>
+					<a class="view-order" href="javascript:void(0)">View Order</a>
+				</div>
+			</div>
+			<div class="cart-card">
+				<p><span>Date:</span> 22 May 2020</p>				
+				<p><span>Order Number:</span> 1200121</p>				
+				<p><span>Total:</span><i class="fa fa-inr" aria-hidden="true"></i> $322</p>
+				<p><span>Payment Mode:</span> <i class="fa fa-money" aria-hidden="true"></i> COD</p>				
+				<p><span>Dilivery Charge:</span> $1</p>				
+				<p><span>Dilivery Agent Number:</span> 8989888888</p>				
+				<p><span>Address:</span> Y-125, sector 12 noida</p>				
+				<p class="status"><span>Status:</span> Order Placed</p>				
+				<div class="order-action">
+					<a href="javascript:void(0)">Cancel</a>
+					<a class="view-order" href="javascript:void(0)">View Order</a>
+				</div>
+			</div>
+			<div class="cart-card">
+				<p><span>Date:</span> 22 May 2020</p>				
+				<p><span>Order Number:</span> 1200121</p>				
+				<p><span>Total:</span><i class="fa fa-inr" aria-hidden="true"></i> $322</p>
+				<p><span>Payment Mode:</span> <i class="fa fa-money" aria-hidden="true"></i> COD</p>				
+				<p><span>Dilivery Charge:</span> $1</p>				
+				<p><span>Dilivery Agent Number:</span> 8989888888</p>				
+				<p><span>Address:</span> Y-125, sector 12 noida</p>				
+				<p class="status"><span>Status:</span> Order Placed</p>				
+				<div class="order-action">
+					<a href="javascript:void(0)">Cancel</a>
+					<a class="view-order" href="javascript:void(0)">View Order</a>
+				</div>
+			</div>
+			<div class="cart-card">
+				<p><span>Date:</span> 22 May 2020</p>				
+				<p><span>Order Number:</span> 1200121</p>				
+				<p><span>Total:</span><i class="fa fa-inr" aria-hidden="true"></i> $322</p>
+				<p><span>Payment Mode:</span> <i class="fa fa-money" aria-hidden="true"></i> COD</p>				
+				<p><span>Dilivery Charge:</span> $1</p>				
+				<p><span>Dilivery Agent Number:</span> 8989888888</p>				
+				<p><span>Address:</span> Y-125, sector 12 noida</p>				
+				<p class="status"><span>Status:</span> Order Placed</p>				
+				<div class="order-action">
+					<a href="javascript:void(0)">Cancel</a>
+					<a class="view-order" href="javascript:void(0)">View Order</a>
+				</div>
+			</div>
+		-->
+		</div>
+		<div class="bottom-icon">
+				<ul>
+					<li>
+						<a href="home.html"><i class="fa fa-home"></i><p>Home</p></a>
+					</li>
+					<li>
+						<a href="myorder.html"><i class="fa fa-shopping-bag"></i><p>Order</p></a>
+					</li>
+					<li>
+						<a href="cart.html"><i class="fa fa-shopping-cart"></i><p>Cart</p></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- main -->
+	<!--custom modal -->
+	<div class="custom-modal order-detail-popup">
+		<div class="modal-box">
+			<div class="modal-body">
+				<a href="javascript:void(0)" class="close-modal">x</a>
+				<h2>Order Detail</h2>
+				<ul id="showbiggerimage">
+					
+		<!--
+					<li>
+						<figure>
+							<img src="image/vegetable.jpg" alt="vegetable">
+						</figure>
+						<div class="detail-product">
+							<p class="name">Tomato</p>
+							<p><span>Quantity:</span> 1kg</p>
+							<p><span>Price:</span> $123 per kg</p>
+							<p><span>Total:</span>1 x 2kg = 246</p>
+						</div>
+					</li>
+					<li>
+						<figure>
+							<img src="image/vegetable.jpg" alt="vegetable">
+						</figure>
+						<div class="detail-product">
+							<p class="name">Tomato</p>
+							<p><span>Quantity:</span> 1kg</p>
+							<p><span>Price:</span> $123 per kg</p>
+							<p><span>Total:</span>1 x 2kg = 246</p>
+						</div>
+					</li>
+					<li>
+						<figure>
+							<img src="image/vegetable.jpg" alt="vegetable">
+						</figure>
+						<div class="detail-product">
+							<p class="name">Tomato</p>
+							<p><span>Quantity:</span> 1kg</p>
+							<p><span>Price:</span> $123 per kg</p>
+							<p><span>Total:</span>1 x 2kg = 246</p>
+						</div>
+					</li>
+				-->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--custom modal -->
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/myscript.js"></script>
+<script>
+	var value = window.localStorage.getItem("login");
+	if(value!='true'){
+		window.location.href="index.html";
+	}
+	loadPrvOrder(); showcartcount()
+</script>
+</body>
+</html>

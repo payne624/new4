@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalam Academy</title>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="loader">
+		<div class="loader-box">
+			<label>
+				<i class="fa fa-spinner fa-spin"></i>
+			</label>
+		</div>
+	</div>
+	<!-- header -->
+	<header>
+		<a class="menu">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</a>
+		<form id="search-form">
+			<i class="fa fa-search" onclick="searchitem()"></i>
+			<input type="text" class="form-control" placeholder="Search for products" id="usersearchtext" onkeyup="searchitem()">
+		</form>
+		<!-- if no need to search please remove search bar and uncommented this code-->
+		<!-- <div class="flex-1">
+		</div> -->
+		<!--  -->
+
+		<div class="left-icons">
+			<a href="cart.html" class="cart-header">
+				<k id="cart_count"></k>
+				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			</a>
+		</div>
+	</header>
+	<!-- header -->
+
+	<!-- main -->
+	<div  class="main-content">
+		
+		<div class="main-banner">
+			<div class="owl-carousel owl-theme main-banner-slider" id="newbanner">
+				<div class="item">
+					<figure>
+						<img src="image/banner1.jpg" alt="banner">
+					</figure>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="image/banner2.jpg" alt="banner">
+					</figure>
+				</div>
+				<div class="item">
+					<figure>
+						<img src="image/banner3.jpg" alt="banner">
+					</figure>
+				</div>
+			</div>
+		</div>
+	
+		<div class="all-product-category-page main-content" id="newprotab">
+			
+		</div>
+<!--
+		<h4 class="head-cat mt-5" id="cat-slide-head">Category</h4>
+		<div class="category-slider owl-theme owl-carousel" id="cat-slide">
+			<div class="all-category"><div class="category-box"><a href="allproduct.html"><figure><img src="image/vegetable.jpg" alt="category"></figure><p>Vegetable</p></a></div></div>
+			
+			<div class="all-category">
+				<div class="category-box">
+					<a href="allproduct.html">
+						<figure>
+							<img src="image/vegetable.jpg" alt="category">
+						</figure>
+						<p>Vegetable</p>
+						<p>Fresh Vegetable product</p>
+					</a>
+				</div>
+			</div>
+			<div class="all-category">
+				<div class="category-box">
+					<a href="allproduct.html">
+						<figure>
+							<img src="image/vegetable.jpg" alt="category">
+						</figure>
+						<p>Vegetable</p>
+						<p>Fresh Vegetable product</p>
+					</a>
+				</div>
+			</div>
+			<div class="all-category">
+				<div class="category-box">
+					<a href="allproduct.html">
+						<figure>
+							<img src="image/vegetable.jpg" alt="category">
+						</figure>
+						<p>Vegetable</p>
+						<p>Fresh Vegetable product</p>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	-->
+		<div class="all-category pt-0">
+			<h4 class="head-cat" id="cat-grid-head">Category</h4>
+			<div class="category-grid" id="cat-grid">
+				<div class="category-box"><a href="allproduct.html"><figure><img src="image/vegetable.jpg" alt="category"></figure><h6>Vegetable</h6><p>Fresh Vegetable product</p></a></div>
+				
+				<div class="category-box">
+					<a href="allproduct.html">
+						<figure>
+							<img src="image/vegetable.jpg" alt="category">
+						</figure>
+						<h6>Fruits</h6>
+						<p>Fresh Vegetable product</p>
+					</a>
+				</div>
+				<div class="category-box">
+					<a href="allproduct.html">
+						<figure>
+							<img src="image/vegetable.jpg" alt="category">
+						</figure>
+						<h6>Diary Products</h6>
+						<p>Fresh Vegetable product</p>
+					</a>
+				</div>
+				<div class="category-box">
+					<a href="allproduct.html">
+						<figure>
+							<img src="image/vegetable.jpg" alt="category">
+						</figure>
+						<h6>Grocery</h6>
+						<p>Fresh Vegetable product</p>
+					</a>
+				</div>
+				<div class="category-box">
+					<a href="allproduct.html">
+						<figure>
+							<img src="image/vegetable.jpg" alt="category">
+						</figure>
+						<h6>Meat &amp; Fish</h6>
+						<p>Fresh Vegetable product</p>
+					</a>
+				</div>
+
+			</div>
+			<div class="bottom-icon">
+				<ul>
+					<li>
+						<a href="home.html"><i class="fa fa-home"></i><p>Home</p></a>
+					</li>
+					<li>
+						<a href="myorder.html"><i class="fa fa-shopping-bag"></i><p>Order</p></a>
+					</li>
+					<li>
+						<a href="cart.html"><i class="fa fa-shopping-cart"></i><p>Cart</p></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- main -->
+
+
+	<!-- sidebar -->
+	<div class="sidebar">
+		<div class="sidebar-box">
+			<div class="sidebar-header">
+				<h2>Hi,</h2>
+			</div>
+			<ul>
+				<li>
+					<a href="home.html">
+						<i class="fa fa-home"></i>
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="myaccount.html">
+						<i class="fa fa-user"></i>
+						My Account
+					</a>
+				</li>
+				<li>
+					<a href="myorder.html">
+						<i class="fa fa-shopping-bag"></i>
+						My Orders
+					</a>
+				</li>
+				<li>
+					<a href="cart.html">
+						<i class="fa fa-shopping-cart"></i>
+						Cart
+					</a>
+				</li>
+			<!--	<li>
+					<a href="all-coupan.html">
+						<i class="fa fa-gift"></i>
+						All Coupans
+					</a>
+				</li>-->
+				<li>
+					<a href="#" onclick="UserLogout()">
+						<i class="fa fa-sign-out"></i>
+						Logout
+					</a>
+				</li>
+				<li>
+					<a href="#" onclick="Share()" >
+						<i class="fa fa-share-alt"></i>
+						Share
+					</a>
+				</li>
+				<li>
+					<a>
+						<b><i class="fa fa-address-book"></i>Contact Us</b>
+						<div id="contactoptionlist">
+							<p>9876543210</p>
+							<p>example@gmail.com</p>
+							<p>#3 Main Road Ranchi </p>
+						</div>
+						
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- sidebar -->
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/myscript.js"></script>
+<script src="js/share.js"></script>
+<script>
+	$('.loader').show();
+	var value = window.localStorage.getItem("login");
+	if(value!='true'){
+		window.location.href="index.html";
+	}
+	loadbanner();	loadCategory(); loadcontactoption(); showcartcount();
+	$("#newprotab").hide(); 
+	$('.loader').hide();
+</script>
+</body>
+</html>
